@@ -13,6 +13,7 @@ const index = path.join(PUBLIC_DIR, 'index.html')
 //*** Routes ***//
 //==============//
 
+//Root routes to ./public/index.html
 app.get('/', (req, res) => {
     res.sendFile(index);
 });
@@ -21,7 +22,6 @@ app.get('/', (req, res) => {
 
 //*** Listener ***//
 //================//
-
 app.listen(PORT, () => {
   console.log(`Server listening on port:${PORT}`);
 });
