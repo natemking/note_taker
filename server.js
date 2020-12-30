@@ -1,21 +1,28 @@
 //*** Dependencies ***//
 //====================//
 const express = require('express');
+const path = require('path');
 
+//*** Express app ***//
+//===================//
 const app = express();
 const PORT = 3000;
 
-const path = require('path');
+//*** Directories ***//
+//===================//
 const PUBLIC_DIR = path.resolve(__dirname, './public');
 const DB_DIR = path.resolve(__dirname, './db');
 const index = path.join(PUBLIC_DIR, 'index.html')
+const notes = path.join(PUBLIC_DIR, 'notes.html')
 
 //*** Routes ***//
 //==============//
-
-//Root routes to ./public/index.html
 app.get('/', (req, res) => {
     res.sendFile(index);
+});
+
+app.get('/notes', (req, res) => {
+    res.sendFile(notes);
 });
 
 
