@@ -49,9 +49,9 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ## Credits
 
-<!-- * [JavaScript inheritance and the Prototype chain](https://ui.dev/javascript-inheritance-and-the-prototype-chain/)
+<!-- * [Background image from subtle backgrounds](https://www.toptal.com/designers/subtlepatterns/?s=paper)
 
-* [Babel plugin proposal class properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
+* [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
 
 * [Get input field to accept only numbers](https://stackoverflow.com/questions/19508183/how-to-force-input-to-only-allow-alpha-letters)
 
