@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+.jumbotron {
+  background-image: url('../images/linedpaper.png');
+}
+
 .save-note {
   display: none;
 }
