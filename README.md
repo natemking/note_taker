@@ -53,6 +53,6 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
 
-* [Get input field to accept only numbers](https://stackoverflow.com/questions/19508183/how-to-force-input-to-only-allow-alpha-letters)
+* [Favicon](https://favicon.io/emoji-favicons/)
 
 * [Text Outline CSS trick](https://stackoverflow.com/questions/57464935/font-outline-using-only-css) -->
