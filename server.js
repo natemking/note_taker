@@ -6,6 +6,22 @@ const app = express();
 const PORT = 3000;
 
 const path = require('path');
-const PUBLIC = path.resolve(__dirname, './public');
-const DB = path.resolve(__dirname, './db');
+const PUBLIC_DIR = path.resolve(__dirname, './public');
+const DB_DIR = path.resolve(__dirname, './db');
+const index = path.join(PUBLIC_DIR, 'index.html')
 
+//*** Routes ***//
+//==============//
+
+app.get('/', (req, res) => {
+    res.sendFile(index);
+});
+
+
+
+//*** Listener ***//
+//================//
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port:${PORT}`);
+});
