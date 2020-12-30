@@ -12,8 +12,8 @@ const PORT = 3000;
 //===================//
 const PUBLIC_DIR = path.resolve(__dirname, './public');
 const DB_DIR = path.resolve(__dirname, './db');
-const index = path.join(PUBLIC_DIR, 'index.html')
-const notes = path.join(PUBLIC_DIR, 'notes.html')
+const index = path.join(PUBLIC_DIR, 'index.html');
+const notes = path.join(PUBLIC_DIR, 'notes.html');
 
 //*** Middleware ***//
 //==================//
@@ -29,7 +29,10 @@ app.get('/notes', (req, res) => {
     res.sendFile(notes);
 });
 
-
+//404
+app.use((req, res) =>{
+    res.sendFile(`${PUBLIC_DIR}/404.html`)
+});
 
 //*** Listener ***//
 //================//
@@ -37,4 +40,3 @@ app.listen(PORT, () => {
   console.log(`Server listening on port:${PORT}`);
 });
 
-// app.use(express.static(PUBLIC_DIR));
