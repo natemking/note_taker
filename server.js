@@ -32,7 +32,7 @@ app.get('/notes', (req, res) => {
     res.sendFile(notes);
 });
 
-app.get('/api', (req, res) => {
+app.get('/api/notes', (req, res) => {
   res.sendFile(db);
 });
 
