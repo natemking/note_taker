@@ -1,8 +1,9 @@
 //*** Dependencies ***//
 //====================//
 const express = require('express');
-const path = require('path');
 const bodyParser = require('body-parser');
+const fs = require('fs');
+const path = require('path');
 
 //*** Express app ***//
 //===================//
@@ -21,7 +22,8 @@ const db = path.join(DB_DIR, 'db.json');
 //*** Middleware ***//
 //==================//
 app.use(express.static(PUBLIC_DIR));
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 //*** Routes ***//
 //==============//
@@ -37,12 +39,15 @@ app.route('/api/notes')
     .get((req, res) => {
         res.sendFile(db);
     }).post((req, res) => {
-        console.log(req.body);
-        // db.push(res)
+        //read and parse db.json
+        const data = JSON.parse(fs.readFileSync(db));
+        //push user data to db.json array
+        data.push(req.body);
+        //Write file w/ new user data
+        fs.writeFile(db, JSON.stringify(data), (err) => {
+          err ? console.error(err) : console.log("User data added");
+        });
     })
-// app.get('/api/notes', (req, res) => {
-//   res.sendFile(db);
-// });
 
 //404
 app.use((req, res) =>{
