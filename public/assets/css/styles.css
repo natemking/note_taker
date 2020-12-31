@@ -30,6 +30,7 @@ html, body {
 
 .note-container {
   margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .note-textarea, .note-title {
@@ -49,10 +50,10 @@ html, body {
 }
 
 .note-title, .note-edge-heading {
-  height: 55px;
+  height: 65px;
   margin-top: 13px;
   font-size: calc(2rem + .75vw);
-  padding: 0 15px 0 15px;
+  padding: 15px 15px 0 15px;
   background-image: url('../images/linedpaper-heading.png');
 }
 
