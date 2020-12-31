@@ -59,7 +59,8 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [Deploying app to Heroku](https://www.freecodecamp.org/news/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe/) 
 
+* [Push object to array of of JSON file](https://stackoverflow.com/questions/61473968/how-to-push-object-inside-an-array-while-writing-to-a-file-in-node-js)
 
-
+* [`require()` vs `fs.readFileSync()` to read JSON files](https://dev.to/tejesh/nodejs-read-json-file-using-require-vs-fs-module-4f94)
 
 -->

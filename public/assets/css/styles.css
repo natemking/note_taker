@@ -4,7 +4,7 @@ html, body {
   padding: 0;
 }
 
-.jumbotron, .note-textarea {
+.jumbotron, .note-textarea, .note-edge {
   background-image: url('../images/linedpaper.png');
 }
 
@@ -36,21 +36,29 @@ html, body {
   color: #4d4d4d;
   width: 100%;
   outline: none;
-  border: none;
+  border-left: 2px solid rgba(230, 143, 151, .3);
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
 }
 
-.note-textarea {
+.note-textarea, .note-edge {
   resize: none;
   height: calc(100% - 63px);
   padding: 15px;
 }
 
-.note-title {
-  height: 50px;
+.note-title, .note-edge-heading {
+  height: 55px;
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: calc(2rem + .75vw);
   padding: 0 15px 0 15px;
+  background-image: url('../images/linedpaper-heading.png');
 }
+
+/* .note-edge, .note-edge-heading {
+  border-right: 2px solid rgba(230, 143, 151, .3);
+} */
 
 .note-title:read-only, .note-textarea:read-only {
   color: #757575;
