@@ -29,8 +29,8 @@ html, body {
 }
 
 .note-container {
-  margin-bottom: 15px;
-  font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 .note-textarea, .note-title {
@@ -90,8 +90,7 @@ html, body {
 }
 
 .list-container .list-group-item {
-  border-left: none;
-  border-right: none;
+  border: none;
   padding: 20px;
   cursor: pointer;
 }
