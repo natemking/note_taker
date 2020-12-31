@@ -8,9 +8,10 @@ html, body {
   background-image: url('../images/linedpaper.png');
 }
 
-.display-4 {
-  color: #4d4d4d;
+.display-4, .navbar-brand:hover {
+  color: #4d4d4d !important;
 }
+
 .card {
   background-color: rgb(238,232,213);
   margin: 15px;
