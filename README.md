@@ -55,4 +55,11 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [Favicon](https://favicon.io/emoji-favicons/)
 
-* [Text Outline CSS trick](https://stackoverflow.com/questions/57464935/font-outline-using-only-css) -->
+* [Deploying app to Heroku](https://www.freecodecamp.org/news/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe/) 
+
+* [Deploying app to Heroku](https://www.freecodecamp.org/news/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe/) 
+
+
+
+
+-->
