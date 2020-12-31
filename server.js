@@ -6,6 +6,7 @@ const path = require('path');
 //*** Express app ***//
 //===================//
 const app = express();
+//Dynamic port for Heroku, fallback 3000
 const port = process.env.PORT || 3000
 
 //*** Directories ***//
