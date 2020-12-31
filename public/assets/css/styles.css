@@ -57,7 +57,7 @@ html, body {
 }
 
 .list-container .card {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 86px);
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
