@@ -1,8 +1,8 @@
 //*** Dependencies ***//
 //====================//
-const { json } = require('express');
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 //*** Express app ***//
 //===================//
@@ -21,6 +21,7 @@ const db = path.join(DB_DIR, 'db.json');
 //*** Middleware ***//
 //==================//
 app.use(express.static(PUBLIC_DIR));
+app.use(bodyParser.urlencoded({extended: false}));
 
 //*** Routes ***//
 //==============//
@@ -32,9 +33,16 @@ app.get('/notes', (req, res) => {
     res.sendFile(notes);
 });
 
-app.get('/api/notes', (req, res) => {
-  res.sendFile(db);
-});
+app.route('/api/notes')
+    .get((req, res) => {
+        res.sendFile(db);
+    }).post((req, res) => {
+        console.log(req.body);
+        // db.push(res)
+    })
+// app.get('/api/notes', (req, res) => {
+//   res.sendFile(db);
+// });
 
 //404
 app.use((req, res) =>{
