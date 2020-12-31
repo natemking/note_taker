@@ -35,6 +35,12 @@ app.get('/notes', (req, res) => {
     res.sendFile(notes);
 });
 
+app.get('/api/notes/:id', (req, res) => {
+  const id = req.params.id;
+  console.log(id);
+  res.end();
+})
+
 app.route('/api/notes')
     .get((req, res) => {
         res.sendFile(db);
@@ -47,7 +53,7 @@ app.route('/api/notes')
         fs.writeFile(db, JSON.stringify(data), (err) => {
           err ? console.error(err) : console.log("User data added");
         });
-    });
+    }); 
 
 //404
 app.use((req, res) =>{
