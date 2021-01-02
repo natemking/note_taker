@@ -42,16 +42,12 @@ app.get('/notes', (req, res) => {
 app.route('/api/notes/:id?')
     .get((req, res) => {
         const id = parseFloat(req.params.id);
-
-        if (id) {
-            for (let i = 0; i < data.length; i++) {
-                if (id === data[i].id) {
-                    res.json(data[i]);
-                    return;
-                }
-            }
-            res.send('No data found')
-        } else {
+        if(id){
+            const arr = data.filter((note) => {
+                return id === note.id
+            });
+            res.json(arr);
+        }else{
             res.sendFile(db);
         }
     })
@@ -91,7 +87,7 @@ app.route('/api/notes/:id?')
 
 //404
 app.use((req, res) => {
-    res.sendFile(`${PUBLIC_DIR}/404.html`)
+    res.status(404).sendFile(`${PUBLIC_DIR}/404.html`);
 });
 
 //*** Listener ***//
