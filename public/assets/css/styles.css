@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
 html, body {
   height: 100%;
   margin: 0;
@@ -30,7 +32,7 @@ html, body {
 
 .note-container {
   margin-bottom: 30px;
-  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Exo', sans-serif;
 }
 
 .note-textarea, .note-title {
@@ -52,7 +54,7 @@ html, body {
 .note-title, .note-edge-heading {
   height: 65px;
   margin-top: 13px;
-  font-size: calc(2rem + .75vw);
+  font-size: calc(1.8rem + .75vw);
   padding: 15px 15px 0 15px;
   background-image: url('../images/linedpaper-heading.png');
 }
@@ -101,7 +103,9 @@ html, body {
     height: calc(50vh - 60px);
   }
 
-  .card li {
-    height: 10%;
+  .list-group-item {
+    height: 10% ;
   }
+
+
 }
