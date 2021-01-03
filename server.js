@@ -1,14 +1,14 @@
 //*** Dependencies ***//
 //====================//
-const express = require('express');
-const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
 
 //*** Express app ***//
 //===================//
 const app = express();
-//Dynamic port for Heroku, fallback 3000
+    //Dynamic port for Heroku, fallback 3000
 const PORT = process.env.PORT || 3000
 
 //*** Directories ***//
@@ -42,20 +42,15 @@ app.get('/notes', (req, res) => {
     res.sendFile(notes);
 });
 
-
 app.route('/api/notes/:id?')
     .get((req, res) => {
-        //Filter and display the notes per their id
+        //Filter and display the notes per their id if specific url is requested
         const id = parseFloat(req.params.id);
         if (id) {
-            const arr = data.filter((note) => {
-                return id === note.id;
-            });
-            res.json(arr);
+            res.json(data.filter((note) => id === note.id ));
         } else {
             res.sendFile(db);
         }
-        return id;
     })
     .post((req, res) => {
         //push user data to db.json array
