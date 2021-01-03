@@ -14,8 +14,8 @@ Homework #11 Express: Note Taker
 ## Table of Contents
  * [Description](#description)
     + [Scope of Work](#scope-of-work)
-    + [Node.js functionality](#nodejs-functionality)
-    + [HTML and CSS](#html-and-css)
+    + [Node.js & Express functionality](#nodejs--express-functionality)
+    + [HTML & CSS](#html--css)
   * [Screenshots](#screenshots)
   * [License](#license)
   * [Credits](#credits)
@@ -25,10 +25,10 @@ Homework #11 Express: Note Taker
 ### Scope of Work
 The user is wanting an app that will allow them to take notes. This app must allow them to create, save, and delete their notes. The app is to use an express.js backend.
 
-### Node.js Functionality
+### Node.js & Express Functionality
 
 
-### HTML and CSS
+### HTML & CSS
 
 
 ## Screenshots
