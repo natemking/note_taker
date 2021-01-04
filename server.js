@@ -3,12 +3,10 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-const bodyParser = require('body-parser');
 
 //*** Express app ***//
 //===================//
 const app = express();
-    //Dynamic port for Heroku, fallback 3000
 const PORT = process.env.PORT || 3000
 
 //*** Directories ***//
@@ -29,8 +27,8 @@ const addID = require(`${LIB_DIR}/addID`);
 //*** Middleware ***//
 //==================//
 app.use(express.static(PUBLIC_DIR));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 //*** Routes ***//
 //==============//
