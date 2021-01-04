@@ -76,9 +76,9 @@ app.route('/api/notes/:id?')
         res.end();
     });
 
-//404
-app.use((req, res) => {
-    res.status(404).sendFile(`${PUBLIC_DIR}/404.html`);
+//Catch all route that sends user to index.html
+app.all('*',(req, res) => {
+    res.redirect('/');
 });
 
 //*** Listener ***//
