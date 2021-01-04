@@ -33,15 +33,29 @@ The user is wanting an app that will allow them to take notes. This app must all
 
 ## Screenshots
 
-<!-- ![app walk through](assets/images/screenshots/coding_team_template_engine.gif?raw=true)
-<br>
-_app walk through_
+<summary><strong>Note Taker</strong></summary>
 <br>
 
-![team.html output](assets/images/screenshots/coding_team_template_engine_team_html.jpg?raw=true)
+
+![index page](./public/assets/images/screenshots/note_taker_index.jpg?raw=true)
 <br>
-_team.html output webpage_
-<br> -->
+_Index.html_
+<br>
+
+![app functionality](./public/assets/images/screenshots/note_taker_notes.gif?raw=true)
+<br>
+_app functionality_
+<br>
+
+![workday planner hour change](./public/assets/images/screenshots/note_taker_index_mobile.jpg?raw=true)
+<br>
+_index.html on mobile_
+<br>
+
+![workday planner day change](./public/assets/images/screenshots/note_taker_notes_mobile.jpg?raw=true)
+<br>
+_notes.html on mobile_
+<br>
 
 
 ## License
@@ -49,7 +63,7 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ## Credits
 
-<!-- * [Background image from subtle backgrounds](https://www.toptal.com/designers/subtlepatterns/?s=paper)
+* [Background image from subtle backgrounds](https://www.toptal.com/designers/subtlepatterns/?s=paper)
 
 * [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
 
@@ -57,10 +71,8 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [Deploying app to Heroku](https://www.freecodecamp.org/news/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe/) 
 
-* [Deploying app to Heroku](https://www.freecodecamp.org/news/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe/) 
-
 * [Push object to array of of JSON file](https://stackoverflow.com/questions/61473968/how-to-push-object-inside-an-array-while-writing-to-a-file-in-node-js)
 
 * [`require()` vs `fs.readFileSync()` to read JSON files](https://dev.to/tejesh/nodejs-read-json-file-using-require-vs-fs-module-4f94)
 
--->
+
