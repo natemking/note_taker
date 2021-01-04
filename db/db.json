@@ -1,1 +1,1 @@
-[{"title":"Test 2","text":"Test 2","id":1},{"title":"One more note","text":"Another fucking note? ","id":2}]
+[{"title":"ToDo List","text":"- Get groceries\n- Wash car\n- Pay med bills\n- Call mom","id":1},{"title":"Grocery List","text":"- eggs\n- milk\n- bread\n- turkey\n- chips","id":2},{"title":"Class notes","text":"to. pull the needed dependencies in a package.json:\nnpm -i\n\nArray Methods:\nmap()\nfilter()\nreduce()\nevery()\nsome()\nslice()\nsplice()","id":3}]
