@@ -37,22 +37,22 @@ The user is wanting an app that will allow them to take notes. This app must all
 <br>
 
 
-![index page](./public/assets/images/screenshots/note_taker_index.jpg?raw=true)
+![index page](./app/public/assets/images/screenshots/note_taker_index.jpg?raw=true)
 <br>
 _Index.html_
 <br>
 
-![app functionality](./public/assets/images/screenshots/note_taker_notes.gif?raw=true)
+![app functionality](./app/public/assets/images/screenshots/note_taker_notes.gif?raw=true)
 <br>
 _app functionality_
 <br>
 
-![workday planner hour change](./public/assets/images/screenshots/note_taker_index_mobile.jpg?raw=true)
+![workday planner hour change](./app/public/assets/images/screenshots/note_taker_index_mobile.jpg?raw=true)
 <br>
 _index.html on mobile_
 <br>
 
-![workday planner day change](./public/assets/images/screenshots/note_taker_notes_mobile.jpg?raw=true)
+![workday planner day change](./app/public/assets/images/screenshots/note_taker_notes_mobile.jpg?raw=true)
 <br>
 _notes.html on mobile_
 <br>
