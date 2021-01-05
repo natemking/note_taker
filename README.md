@@ -15,7 +15,7 @@ Homework #11 Express: Note Taker
  * [Description](#description)
     + [Scope of Work](#scope-of-work)
     + [Node.js & Express functionality](#nodejs--express-functionality)
-    + [HTML & CSS](#html--css)
+    + [HTML, CSS & jQuery](#html-css--jquery)
   * [Screenshots](#screenshots)
   * [License](#license)
   * [Credits](#credits)
@@ -26,9 +26,20 @@ Homework #11 Express: Note Taker
 The user is wanting an app that will allow them to take notes. This app must allow them to create, save, and delete their notes. The app is to use an express.js backend.
 
 ### Node.js & Express Functionality
+The main goal of this project was taking the boilerplate code we were provided and getting it deployed to a custom-built Express server. The first move was to create a server file. Once the file was created, I moved onto getting my routes setup. Originally I had written the routes right into the server file but refactored to have my routes in their own modules. I like this as it compartmentalizes your code. Not only does it give other modules access to the same code, but it also makes updating code in the future much easier. No need to go to multiple spots. Just update your module and it will flow through.
 
+The only npm package in this project is Express. The rest of the modules I used are either built-in (fs, patch) or written by me. The only middleware needed was built in as well(static, urlencoded, JSON).
 
-### HTML & CSS
+The API route is really only one route that takes the user to '/api/notes'. The GET request will display the current notes that are saved in the db.json file. I did add an ID parameter here allowing the ability to display just one note based on its ID number. Otherwise, all notes are displayed. The POST method will take the users parsed JSON data from the db file and push the user data to it. I call a modularized function, `addID()`, that adds a unique ID onto each note. This function is a simple for loop that goes through each object and adds the ID as a number. Then the new db file is written using the filesystem `writeFile()` method which is actually in another modularized function called `writeToFile()` that I created. Finally, there is a DELETE request. The object is deleted by using a for loop and the `splice()` method on the db.json data. The object can be identified by the ID number that is added to it on the POST request. Once the object is removed, the data is again run through the `addID()` function to update the ID numbers and lastly written with the `writeToFile()` function.
+
+The HTML routes are very straight forward. There are only three: '/' (index.html), 'notes'(notes.html), and a '*' wildcard to redirect all other route requests back to the index. 
+
+### HTML, CSS, & jQuery
+All of the HTML, CSS, and jQuery came provided with the assignment. I left the jQuery code alone. Once the server was up and running, all the jQuery was working as expected and I saw no need to alter it. The HTML was not altered too much either. Aside from changing some wording and a provided emoji, it is very similar to what was originally given. 
+
+It was in the styling that I decided to have a little fun and put my own spin on the project. The project came with BootStrap and a BootSwatch theme. I updated this theme to a color scheme I preferred more. What I really dove into though was the idea that I wanted the notes to actually look like a notepad and paper. The note list was simple. Just some formatting and coloring to give the look of a post-it pad. The real fun was to make the note text area to look like a sheet of ruled paper. I achieved this by using a background I found that was lined paper. The background is just the lines. I had to use BootStraps grid to create a grid of 2 columns and add the background image to all. Then I was able to add a border for the pink margin line on ruled paper. A happy accident worked out that my text lines up with the lines on the paper. 
+
+As with all my projects, this is fully mobile responsive. I had to go outside of BootStraps responsiveness and create some media query rules of my own in order to achieve the look I wanted on mobile devices.
 
 
 ## Screenshots
